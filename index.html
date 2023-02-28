@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Claculator</title>
+</head>
+<body>
+    <div class="mainbox">
+        <div id="display">
+            <p id="display-content"></p>
+        </div>
+        <div id="numpad">
+         <span id=" row1">
+          <li onclick="dis(1)">1</li>
+          <li onclick="dis(2)">2</li>
+          <li onclick="dis(3)">3</li>
+          <li onclick="dis('*')">x</li>
+        </span>
+         <span id=" row2">
+          <li onclick="dis(4)">4</li>
+          <li onclick="dis(5)">5</li>
+          <li onclick="dis(6)">6</li>
+          <li onclick="dis('+')">+</li>
+        </span>
+         <span id=" row3">
+             <li onclick="dis(7)">7</li>
+          <li onclick="dis(8)">8</li>
+          <li onclick="dis(9)">9</li>
+          <li onclick="dis('-')">-</li>
+        </span>
+         <span id=" row4">
+             <!-- <li>2</li> -->
+             <li onclick="dis('.')">.</li>
+             <li onclick="dis(0)">0</li>
+             <button id="equal-btn" onclick="execute()">=</button>
+             <li onclick="dis('/')">/</li>
+        </span>
+        <span id="clear">
+           <button id="clear-btn" onclick="clr()">Clear</button>
+        </span>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
